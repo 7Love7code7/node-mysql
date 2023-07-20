@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+body, html{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+  margin: 0;
+}
+  .border{
+    border: 2px;
+    border-style: solid;
+  }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    "left . right right"
+    "left . right right"
+    "left . right right";
+}
+.left { grid-area: left; }
+.right { grid-area: right; }
+
+#form{
+  padding-left: 5px;
+}

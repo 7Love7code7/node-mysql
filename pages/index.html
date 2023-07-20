@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>
+      Web Form
+   </title>
+  </head>
+
+
+  <body style="margin:10px" onload="CRUD('table')">
+    <h1>Users Form</h1>
+
+  
+    <div class="grid-container">
+      
+      
+      <div class="right" id="databox" >    
+        <h4>DATABASE VIEW</h4> 
+       <table id="userstbl">
+
+       </table>
+      </div>
+
+
+      <div class="left border">
+  <form id="formadd" class="border">
+       
+    <h4>ADD USER</h4>
+    <label id="name-label" for="name">Name:</label><br>
+<input type="text" id="addname" name="name" placeholder="Enter your name"><br>
+<label id="country-label" for="country">Country:</label><br>
+<input type="text" id="addcountry" name="country" placeholder="Enter your country"><br>
+<label id="number-label" for="number">Phone Number:</label><br>
+<input type="tel" id="addnumber" name="number" placeholder="Enter your number"><br>
+<input  type="button" value="Submit" onclick="CRUD('add')" ><br><br>
+  </form>
+
+  
+    <form id="formdelete" class="border">
+      <h4>DELETE USER</h4>
+    <label id="id-label" for="idnum">Insert id number for delete:</label><br>
+    <input type="number" id="idnum" name="idnum" placeholder="Enter the user's id"><br>
+    <input type="button" value="Submit" onclick="CRUD('delete')"><br><br>
+    </form>
+    
+
+
+  <form id="formupdate" class="border">
+    <h4>UPDATE USER</h4>
+    <label id="id-label" for="idnum">ID:</label><br>
+    <input type="number" id="updid" name="idnum" placeholder="Enter the user's id"><br>
+  <label id="name-label" for="name">Name:</label><br>
+   <input type="text" id="updname" name="name" placeholder="Enter your name"><br>
+   <label id="country-label" for="country">Country:</label><br>
+   <input type="text" id="updcountry" name="country" placeholder="Enter your country"><br>
+   <label id="number-label" for="number">Phone Number:</label><br>
+   <input type="tel" id="updnumber" name="number" placeholder="Enter your number"><br>
+   <input type="button" value="Submit" onclick="CRUD('update')"><br><br>
+     </form>
+
+
+    </div>
+  </body>
+   <script type="text/javascript" src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html> 
